@@ -1,0 +1,45 @@
+﻿@model RegisterViewModel
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <div class="jumbotron mt-5">
+        <form method="post">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Adınız</label>
+                <input asp-for="Name" type="text" class="form-control" id="formGroupExampleInput" placeholder="Adınız">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Soyadınız</label>
+                <input asp-for="Surname" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Soyadınız">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Kullanıcı Adınız</label>
+                <input asp-for="UserName" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Kullanıcı Adınız">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">E-Posta Adresiniz</label>
+                <input asp-for="Email" type="text" class="form-control" id="formGroupExampleInput2" placeholder="E-Posta Adresiniz">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Şehir</label>
+                <input asp-for="City" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Şehir">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">İlçe</label>
+                <input asp-for="District" type="text" class="form-control" id="formGroupExampleInput2" placeholder="İlçe">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Parola</label>
+                <input asp-for="Password" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Parola">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-info btn-block">Kayıt Ol</button>
+            </div>
+        </form>
+    </div>
+</div>

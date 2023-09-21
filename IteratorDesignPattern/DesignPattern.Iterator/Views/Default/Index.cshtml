@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+    var Model = ViewBag.VisitRoute;
+    int count = 0;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container mt-5 mw-50">
+    <div class="table-responsive">
+        <table class="table table-hover table-borderless text-center">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Ziyaret Noktası</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    count++;
+                    <tr>
+                        <td>@count</td>
+                        <td>@item</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

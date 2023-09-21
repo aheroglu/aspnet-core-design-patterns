@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+    var value = ViewBag.Values as ProductComposite;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container m-5">
+    <div class="row">
+        <div class="col-4">
+            <div class="card-header">
+                <h3>Toplam Ürün Sayısı: @value.TotalCount()</h3>
+            </div>
+            <div class="card-body">
+                @foreach (var item in value.Components)
+                {
+                    @Html.Raw(item.Display()) 
+                }
+            </div>
+        </div>
+    </div>
+</div>

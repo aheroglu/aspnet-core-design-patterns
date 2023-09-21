@@ -1,0 +1,31 @@
+﻿@model DesignPattern.Facade.DAL.Customer
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Yeni Müşteri Girişi</h1>
+
+<div class="container mt-5">
+    <form method="post">
+        <div class="row mb-3">
+            <label class="form-label" for="name">Müşteri Adı</label>
+            <input asp-for="Name" type="text" class="form-control" id="name" />
+        </div>
+        <div class="row mb-3">
+            <label class="form-label" for="surname">Müşteri Soyadı</label>
+            <input asp-for="Surname" type="text" class="form-control" id="surname" />
+        </div>
+        <div class="row mb-3">
+            <label class="form-label" for="address">Müşteri Adresi</label>
+            <input asp-for="Address" type="text" class="form-control" id="address" />
+        </div>
+        <div class="row mb-3">
+            <label class="form-label" for="city">Müşteri Şehri</label>
+            <input asp-for="City" type="text" class="form-control" id="city" />
+        </div>
+        <div class="row mb-3">
+            <button type="submit" class="btn btn-primary">Ekle</button>
+        </div>
+    </form>
+</div>

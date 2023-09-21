@@ -1,0 +1,35 @@
+﻿@model DesignPattern.Facade.DAL.OrderDetail
+
+@{
+    ViewData["Title"] = "OrderStart";
+}
+
+<h1>Sipariş Detay Sayfası</h1>
+
+<div class="container mt-5">
+    <form method="post">
+        <div class="row mb-3">
+            <label class="form-label" for="customerId">Müşteri Id</label>
+            <input asp-for="CustomerId" type="text" class="form-control" id="customerId" />
+        </div>
+        <div class="row mb-3">
+            <label class="form-label" for="orderId">Sipariş Id</label>
+            <input asp-for="OrderId" type="text" class="form-control" id="orderId" />
+        </div>
+        <div class="row mb-3">
+            <label class="form-label" for="productId">Ürün Id</label>
+            <input asp-for="ProductId" type="text" class="form-control" id="productId" />
+        </div>
+        <div class="row mb-3">
+            <label class="form-label" for="productPrice">Ürün Fiyat</label>
+            <input asp-for="ProductPrice" type="text" class="form-control" id="productPrice" />
+        </div>
+        <div class="row mb-3">
+            <label class="form-label" for="productCount">Ürün Adet</label>
+            <input asp-for="ProductCount" type="text" class="form-control" id="productCount" />
+        </div>
+        <div class="row mb-3">
+            <button type="submit" class="btn btn-primary">Sipariş Ver</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,21 @@
+﻿@model RepositoryDesignPattern.Entity.Concrete.Category
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container mt-5 w-50">
+    <div class="jumbotron">
+        <form method="post">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Kategori Adı</label>
+                <input asp-for="Name" type="text" class="form-control" id="formGroupExampleInput" placeholder="Kategori Adı">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary btn-block">Ekle</button>
+            </div>
+        </form>
+    </div>
+</div>

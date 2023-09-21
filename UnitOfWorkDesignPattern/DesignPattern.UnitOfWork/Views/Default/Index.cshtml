@@ -1,0 +1,29 @@
+﻿@model CustomerViewModel
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container mt-5 w-25">
+    <div class="jumbotron">
+        <form method="post">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Gönderici Id</label>
+                <input asp-for="SenderId" type="text" class="form-control" id="formGroupExampleInput" placeholder="Gönderici Id">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Alıcı Id</label>
+                <input asp-for="ReceiverId" type="text" class="form-control" id="formGroupExampleInput" placeholder="Alıcı Id">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Miktar</label>
+                <input asp-for="Amount" type="text" class="form-control" id="formGroupExampleInput" placeholder="Miktar">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary btn-block">Gönder</button>
+            </div>
+        </form>
+    </div>
+</div>

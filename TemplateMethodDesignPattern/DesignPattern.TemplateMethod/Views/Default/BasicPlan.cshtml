@@ -1,0 +1,16 @@
+﻿@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container mt-5 w-50">
+    <h3>Plan Adı: @ViewBag.PlanType</h3>
+    <h3>Kişi Sayısı: @ViewBag.PersonCount</h3>
+    <h3>Fiyat: @ViewBag.Price</h3>
+    <h3>Plan İçeriği: @ViewBag.Content</h3>
+    <h3>Plan Çözünürlüğü: @ViewBag.Resolution</h3>
+    <hr />
+    <a href="/Default/StandartPlan" class="btn btn-warning">Standart Plan</a>
+    <a href="/Default/UltraPlan" class="btn btn-success">Ultra Plan</a>
+</div>

@@ -1,0 +1,31 @@
+﻿@model DesignPattern.Facade.DAL.Product
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Yeni Ürün Girişi</h1>
+
+<div class="container mt-5">
+    <form method="post">
+        <div class="row mb-3">
+            <label class="form-label" for="name">Ürün Adı</label>
+            <input asp-for="Name" type="text" class="form-control" id="name" />
+        </div>
+        <div class="row mb-3">
+            <label class="form-label" for="stock">Ürün Stok Sayısı</label>
+            <input asp-for="Stock" type="text" class="form-control" id="stock" />
+        </div>
+        <div class="row mb-3">
+            <label class="form-label" for="price">Ürün Fiyatı</label>
+            <input asp-for="Price" type="text" class="form-control" id="price" />
+        </div>
+        <div class="row mb-3">
+            <label class="form-label" for="category">Ürün Kategorisi</label>
+            <input asp-for="Category" type="text" class="form-control" id="category" />
+        </div>
+        <div class="row mb-3">
+            <button type="submit" class="btn btn-primary">Ekle</button>
+        </div>
+    </form>
+</div>

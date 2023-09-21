@@ -1,0 +1,28 @@
+﻿@model GetProductUpdateQueryResult
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <form method="post">
+        <div class="row mb-3">
+            <label>Name:</label>
+            <input asp-for="Name" type="text" class="form-control" />
+        </div>
+        <div class="row mb-3">
+            <label>Price:</label>
+            <input asp-for="Price" type="text" class="form-control" />
+        </div>
+        <div class="row mb-3">
+            <label>Stock:</label>
+            <input asp-for="Stock" type="text" class="form-control" />
+        </div>
+        <div class="row mb-3">
+            <label>Description:</label>
+            <input asp-for="Description" type="text" class="form-control" />
+        </div>
+    </form>
+</div>
